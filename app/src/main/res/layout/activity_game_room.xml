@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.GameRoomActivity">
+
+    <LinearLayout
+        android:id="@+id/self_detail_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <com.example.pablo.view.helper.PlayerHandView
+            android:id="@+id/player_hand_layout"
+            android:layout_width="@dimen/player_hand_area_width_max"
+            android:layout_height="@dimen/player_hand_area_width_height"
+            android:layout_gravity="center_vertical" />
+
+        <com.example.pablo.view.helper.PlayerDetailView
+            android:id="@+id/player1_area_layout"
+            android:layout_width="@dimen/player_detail_area_width"
+            android:layout_height="@dimen/player_detail_area_height"
+            android:layout_marginStart="5dp" />
+
+        <Button
+            android:id="@+id/show_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:text="Show" />
+
+    </LinearLayout>
+
+    <com.example.pablo.view.helper.PlayerDetailView
+        android:id="@+id/player2_area_layout"
+        android:layout_width="@dimen/player_detail_area_width"
+        android:layout_height="@dimen/player_detail_area_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/last_called_poker_hand_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/last_poker_hand_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Full House (222, 33)"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

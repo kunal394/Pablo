@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="self_cards_size">30dp</dimen>
+    <dimen name="cards_overlap_area">-15dp</dimen>
+    <dimen name="player_detail_area_width">100dp</dimen>
+    <dimen name="player_detail_area_height">100dp</dimen>
+    <dimen name="player_hand_area_width_max">105dp</dimen>
+    <dimen name="player_hand_area_width_height">35dp</dimen>
+</resources>
